@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dave Stoddart – Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <h1 class="brand">Dave Stoddart</h1>
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#ausbildung">Ausbildung</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section" id="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <h1 id="hero-heading">Hey, <strong>Dave</strong> hier</h1>
+        <h2>Ich bin ein Anwendungsentwickler</h2>
+        <p>Im Rheinland großgeworden und in der Ausbildung bei der GFN GmbH als <strong>Anwendungsentwickler</strong>.
+        </p>
+
+        <ul class="social-links" aria-label="Social Media">
+          <li><a href="#linkedin" aria-label="LinkedIn"><img src="Icons/linkedin-svgrepo-com.svg" alt=""></a></li>
+          <li><a href="#github" aria-label="GitHub"><img src="Icons/github-142-svgrepo-com.svg" alt=""></a></li>
+        </ul>
+
+        <div class="actions">
+          <button class="button" type="button" data-modal-target="job-modal">Jobangebot</button>
+          <button class="button" type="button" data-modal-target="contact-modal">Kontakt</button>
+        </div>
+      </div>
+    </section>
+    <dialog class="modal" id="contact-modal" aria-labelledby="contact-modal-title">
+      <div>
+        <button class="button modal-close" type="button" aria-label="Dialog schließen">&times;</button>
+        <h2 id="contact-modal-title">Kontakt aufnehmen</h2>
+        <form class="contact-form" action="#" method="post">
+          <div>
+            <label for="modal-name">Dein Name</label>
+            <input type="text" id="modal-name" name="name" placeholder="Dein Name" autocomplete="name" required>
+          </div>
+          <div>
+            <label for="modal-email">Deine E-Mail</label>
+            <input type="email" id="modal-email" name="email" placeholder="Deine E-Mail" autocomplete="email" required>
+          </div>
+          <div>
+            <label for="modal-message">Deine Nachricht</label>
+            <textarea id="modal-message" name="message" placeholder="Deine Nachricht" rows="8" required></textarea>
+          </div>
+          <button class="button" type="submit">Nachricht senden</button>
+        </form>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="job-modal" aria-labelledby="job-modal-title">
+      <div>
+        <button class="button modal-close" type="button" aria-label="Dialog schließen">&times;</button>
+        <h2 id="job-modal-title">Zusammenarbeit anbieten</h2>
+        <p>Sie suchen Unterstützung bei der Entwicklung einer Website, Anwendung oder internen Lösung? Lassen Sie uns
+          über Ihr Projekt und die passenden nächsten Schritte sprechen.</p>
+        <form class="contact-form" action="#" method="post">
+          <div>
+            <label for="company-name">Unternehmen</label>
+            <input type="text" id="company-name" name="company" placeholder="Ihr Unternehmen"
+              autocomplete="organization" required>
+          </div>
+          <div>
+            <label for="company-email">Ihre E-Mail</label>
+            <input type="email" id="company-email" name="email" placeholder="Ihre E-Mail" autocomplete="email" required>
+          </div>
+          <div>
+            <label for="project-message">Projektbeschreibung</label>
+            <textarea id="project-message" name="message" placeholder="Worum geht es bei Ihrem Projekt?" rows="8"
+              required></textarea>
+          </div>
+          <button class="button" type="submit">Projekt besprechen</button>
+        </form>
+      </div>
+    </dialog>
+
+    <section class="section" id="ausbildung" aria-labelledby="ausbildung-heading">
+      <h2 class="heading" id="ausbildung-heading">Meine Ausbildung</h2>
+      <ol class="timeline">
+        <li>
+          <time datetime="2026">2026</time>
+          <article>
+            <h3>Zertifizierungen</h3>
+            <p>Scrum, Python</p>
+          </article>
+        </li>
+        <li>
+          <time datetime="2026">2026</time>
+          <article>
+            <h3>Fachinformatiker Anwendungsentwicklung</h3>
+            <p>Interessen: C, C#, Java, Python, Webentwicklung</p>
+            <div class="technology-list" aria-label="Technologien">
+              <img class="icon" src="Icons/html-5-svgrepo-com.svg" alt="HTML5">
+              <img class="icon" src="Icons/css-3-svgrepo-com.svg" alt="CSS3">
+              <img class="icon" src="Icons/javascript-svgrepo-com.svg" alt="JavaScript">
+              <img class="icon" src="Icons/java-svgrepo-com.svg" alt="Java">
+              <img class="icon" src="Icons/python-svgrepo-com.svg" alt="Python">
+              <img class="icon" src="Icons/docker-svgrepo-com.svg" alt="Docker">
+              <img class="icon" src="Icons/git-svgrepo-com.svg" alt="Git">
+              <img class="icon" src="Icons/github-142-svgrepo-com.svg" alt="GitHub">
+            </div>
+          </article>
+        </li>
+        <li>
+          <time datetime="2023">2023</time>
+          <article>
+            <h3>Uni Bonn</h3>
+            <p>Mitarbeiter im Projekt Start. Begleitung der Bachelor- und Masterarbeiten in der Praxis sowie Planung
+              eines Forschungsgewächshauses</p>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="portfolio" aria-labelledby="portfolio-heading">
+      <h2 class="heading" id="portfolio-heading">Mein Portfolio</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Landingpage</h3>
+          <p>Responsive Onepager mit Flexbox-Hero und Grid-Galerie.</p>
+          <a href="#landingpage">Projekt ansehen →</a>
+        </article>
+        <article class="project-card">
+          <h3>Dashboard</h3>
+          <p>Datenübersicht mit CSS-Grid-Layout und Custom Properties.</p>
+          <a href="#dashboard">Projekt ansehen →</a>
+        </article>
+        <article class="project-card">
+          <h3>Kurs-Website</h3>
+          <p>Barrierefreie Schulungsseite mit Fokus auf Semantik.</p>
+          <a href="#kurs-website">Projekt ansehen →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; Dave Stoddart</p>
+  </footer>
+</body>
+
+</html>
