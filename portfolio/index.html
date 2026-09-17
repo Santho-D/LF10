@@ -14,7 +14,7 @@
     <h1 class="brand">Dave Stoddart</h1>
     <nav class="site-nav" aria-label="Hauptnavigation">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#hero">Home</a></li>
         <li><a href="#ausbildung">Ausbildung</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
       </ul>
@@ -24,21 +24,26 @@
   <main>
     <section class="section" id="hero" aria-labelledby="hero-heading">
       <div class="hero-content">
-        <h1 id="hero-heading">Hey, <strong>Dave</strong> hier</h1>
-        <h2>Ich bin ein Anwendungsentwickler</h2>
-        <p>Im Rheinland großgeworden und in der Ausbildung bei der GFN GmbH als <strong>Anwendungsentwickler</strong>.
-        </p>
-
-        <ul class="social-links" aria-label="Social Media">
-          <li><a href="#linkedin" aria-label="LinkedIn"><img src="Icons/linkedin-svgrepo-com.svg" alt=""></a></li>
-          <li><a href="#github" aria-label="GitHub"><img src="Icons/github-142-svgrepo-com.svg" alt=""></a></li>
-        </ul>
-
+        <div class="hero-text">
+          <h2 id="hero-heading"><strong>Dave</strong> hier</h2>
+          <h2 id="hero-statement">Ich bin ein wissbegieriger Geek aus überzeugung.</h2>
+          <p>Im Rheinland großgeworden und in der Ausbildung bei der GFN Essen als <strong>Fachinformatiker
+              Anwendungsentwicklung</strong>.<br>
+            Ich hoffe eure Aufmerksamkeit gewinnen zu können. Auf der Suche nach neuen Herausforderungen habe ich
+            entschlossen, mein Technik-Interesse zum Beruf zu machen.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="" alt="Illustration eines Programmierers">
+          <ul class="social-links" aria-label="Social Media">
+            <li><a href="#linkedin" aria-label="LinkedIn"><img src="Icons/linkedin-svgrepo-com.svg" alt=""></a></li>
+            <li><a href="#github" aria-label="GitHub"><img src="Icons/github-142-svgrepo-com.svg" alt=""></a></li>
+          </ul>
+        </div>
         <div class="actions">
           <button class="button" type="button" data-modal-target="job-modal">Jobangebot</button>
           <button class="button" type="button" data-modal-target="contact-modal">Kontakt</button>
         </div>
-      </div>
     </section>
     <dialog class="modal" id="contact-modal" aria-labelledby="contact-modal-title">
       <div>
