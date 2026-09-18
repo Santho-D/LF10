@@ -32,11 +32,14 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y proximity;
+  scroll-padding-top: 95px;
 }
 
 body {
@@ -46,7 +49,10 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.15rem;
   line-height: 1.55;
-  
+}
+
+.site-main {
+  padding-top: 0;
 }
 
 a {
@@ -76,6 +82,7 @@ a {
   background: linear-gradient(to bottom, var(--bg-dark), var(--crust));
   box-shadow: 0 8px 24px var(--shadow);
   width: 100%;
+  backdrop-filter: blur(3px);
 }
 
 .brand,
@@ -114,14 +121,16 @@ a {
 .section {
   width: 100%;
   max-width: none;
+  min-height: 100vh;
   margin: 0;
   scroll-snap-align: start;
   scroll-snap-stop: always;
+  padding: 8rem max(2rem, calc((100% - var(--content-width)) / 2));
 }
 
 /* Hero */
 #hero {
-  min-height: 662px;
+  min-height: calc(100vh - 95px);
   padding: 0;
   background: var(--surface);
   box-shadow: 0 24px 60px rgb(17 17 27 / 28%);
@@ -139,7 +148,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 4rem  2rem;
+  padding:  4rem  3rem;
 
 }
 
@@ -258,10 +267,6 @@ a {
 
 /* Education */
 
-#ausbildung {
-  padding: 8rem max(2rem, calc((100% - var(--content-width)) / 2));
-}
-
 .timeline {
   display: flex;
   flex-direction: column;
@@ -323,7 +328,6 @@ a {
 /* Portfolio */
 
 #portfolio {
-  padding: 8rem max(2rem, calc((100% - var(--content-width)) / 2));
   background: var(--surface);
 }
 
@@ -423,13 +427,21 @@ a {
 /* Dialogs */
 
 .modal {
+  position: fixed;
+  inset: 0;
   width: min(90% - 2rem, 720px);
+  max-height: calc(100vh - 2rem);
+  margin: auto;
   padding: 0;
   border: 1px solid var(--mauve);
   border-radius: 18px;
   background: var(--surface);
   color: var(--text);
   box-shadow: 0 20px 70px var(--shadow), 0 0 24px rgb(203 166 247 / 18%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal::backdrop {
@@ -478,6 +490,8 @@ a {
     gap: 1rem;
     padding-block: 1.3rem;
   }
+
+
 
   .site-nav ul {
     flex-wrap: wrap;
