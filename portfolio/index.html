@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
 
-<!--- header    -->
-    <header class="site-header">
+  <!--- header    -->
+  <header class="site-header">
     <h1 class="brand">Dave Stoddart</h1>
     <nav class="site-nav" aria-label="Hauptnavigation">
       <ul>
@@ -24,27 +25,30 @@
 
   <main>
 
-<!--- Hero Card -->
+    <!--- Hero Card -->
     <section class="section" id="hero" aria-labelledby="hero-heading">
       <div class="hero-content">
-        <div class="hero-text">
+        <div class="hero-main">
+          <div class="hero-text">
             <div class="wrapper" id="hero-desc">
-            <h2 id="hero-heading"><strong>Dave</strong> hier</h2>
-          <h2 id="hero-statement">Ich bin ein wissbegieriger Geek aus überzeugung.</h2>
+              <h2 id="hero-heading"><strong>Dave</strong> hier</h2>
+              <h2 id="hero-statement">Ich bin ein wissbegieriger Geek aus überzeugung.</h2>
             </div>
             <div class="hero-image">
               <img src="" alt="Illustration eines Programmierers">
             </div>
-        </div>
+          </div>
           <p>Im Rheinland großgeworden und in der Ausbildung bei der GFN Essen als <strong>Fachinformatiker
               Anwendungsentwicklung</strong>.<br>
             Ich hoffe eure Aufmerksamkeit gewinnen zu können. Auf der Suche nach neuen Herausforderungen habe ich
             entschlossen, mein Technik-Interesse zum Beruf zu machen.
           </p>
-          <ul class="social-links" aria-label="Social Media">
-            <li><a href="#linkedin" aria-label="LinkedIn"><img src="Icons/linkedin-svgrepo-com.svg" alt=""></a></li>
-            <li><a href="#github" aria-label="GitHub"><img src="Icons/github-142-svgrepo-com.svg" alt=""></a></li>
-          </ul>
+        </div>
+
+        <ul class="social-links" aria-label="Social Media">
+          <li><a href="#linkedin" aria-label="LinkedIn"><img src="Icons/linkedin-svgrepo-com.svg" alt=""></a></li>
+          <li><a href="#github" aria-label="GitHub"><img src="Icons/github-142-svgrepo-com.svg" alt=""></a></li>
+        </ul>
         <div class="actions">
           <button class="button" type="button" data-modal-target="job-modal">Jobangebot</button>
           <button class="button" type="button" data-modal-target="contact-modal">Kontakt</button>
@@ -52,7 +56,7 @@
       </div>
     </section>
 
-<!--- Contact Modal --->
+    <!--- Contact Modal --->
     <dialog class="modal" id="contact-modal" aria-labelledby="contact-modal-title">
       <div>
         <button class="button modal-close" type="button" aria-label="Dialog schließen">&times;</button>
@@ -75,7 +79,7 @@
       </div>
     </dialog>
 
-<!--- Job Modal --->
+    <!--- Job Modal --->
     <dialog class="modal" id="job-modal" aria-labelledby="job-modal-title">
       <div>
         <button class="button modal-close" type="button" aria-label="Dialog schließen">&times;</button>
@@ -102,17 +106,10 @@
       </div>
     </dialog>
 
-<!--- Curiculum Vitae --->
+    <!--- Curiculum Vitae --->
     <section class="section" id="ausbildung" aria-labelledby="ausbildung-heading">
       <h2 class="heading" id="ausbildung-heading">Meine Ausbildung</h2>
       <ol class="timeline">
-        <li>
-          <time datetime="2026">2026</time>
-          <article>
-            <h3>Zertifizierungen</h3>
-            <p>Scrum, Python</p>
-          </article>
-        </li>
         <li>
           <time datetime="2026">2026</time>
           <article>
@@ -138,17 +135,32 @@
               eines Forschungsgewächshauses</p>
           </article>
         </li>
+        <li>
+          <time datetime="2021">2021</time>
+          <article>
+            <h3>Erfolgreicher Abschluss als Gärtner</h3>
+            <p>Meine 3 Jährige Berufsausbildung als Gärtner im Garten- und Landschaftsbau war erfolgreich.</p>
+          </article>
+        </li>
+        <li><time datetime="2013">2013</time>
+          <article>
+            <h3>Fachoberschulreife</h3>
+            <p>Meinen Abschluss am Gymnasium Schloss Hagerhof nach der 11. Klasse absolviert.</p>
+          </article>
+        </li>
+        <li></li>
+        <li></li>
       </ol>
     </section>
 
-<!--- Portfolio --->
+    <!--- Portfolio --->
     <section class="section" id="portfolio" aria-labelledby="portfolio-heading">
       <h2 class="heading" id="portfolio-heading">Mein Portfolio</h2>
       <div class="project-grid">
         <article class="project-card">
-          <h3>Landingpage</h3>
-          <p>Responsive Onepager mit Flexbox-Hero und Grid-Galerie.</p>
-          <a href="#landingpage">Projekt ansehen →</a>
+          <h3>Diese Website</h3>
+          <p>Responsive Onepager mit Flexbox- und Grid-Design.<br>Techsstack: HTML, CSS, JavaScript</p>
+          <a href="#hero">Projekt ansehen →</a>
         </article>
         <article class="project-card">
           <h3>Dashboard</h3>
@@ -156,9 +168,9 @@
           <a href="#dashboard">Projekt ansehen →</a>
         </article>
         <article class="project-card">
-          <h3>Kurs-Website</h3>
-          <p>Barrierefreie Schulungsseite mit Fokus auf Semantik.</p>
-          <a href="#kurs-website">Projekt ansehen →</a>
+          <h3>CinePix</h3>
+          <p>Eine moderne Film- und Serien-Datenbank mit Suchfunktion und Bewertungssystem.</p>
+          <a href="#cinepix">Projekt ansehen →</a>
         </article>
       </div>
     </section>
@@ -168,4 +180,5 @@
     <p>&copy; 2026 David Stoddart</p>
   </footer>
 </body>
+
 </html>
